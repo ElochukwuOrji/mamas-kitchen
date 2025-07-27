@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mama's Kitchen - Local Food Menu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>🍽️ Mama's Kitchen</h1>
+            <p>Order your favourite Nigerian meals</p>
+        </header>
+
+        <div class="container">
+            <!-- Menu section -->
+            <section class="menu-section">
+                <h2>Menu</h2>
+                <div class="menu-items" id="menu-container">
+                    <!-- Menu Items would be generated here by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Order section -->
+            <section class="order-section">
+                <h2>Your Order</h2>
+                <div class="order-items" id="order-items">
+                    <!-- Selected items will appear here -->
+                    <p class="empty-cart">Your plate is empty. Add some delicious meals!</p>
+                </div>
+                <div class="order-total">
+                    <h3>Total: ₦<span id="total-price">0</span><h3>
+                </div>
+                <div class="order-buttons">
+                    <button id="submit-order" class="btn btn-primary" disabled>Submit Order</button>
+                    <button id="print-order"class="btn btn-secondary" disabled>Print Order</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Success modal -->
+        <div id="success-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>🎉 Order submitted successfully!</h2>
+                <p>Your meal will be ready in 10-15 mintues.</p>
+                <p>Order ID: <span id="order-id"></span></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
